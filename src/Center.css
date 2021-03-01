@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: unset;
+
+}
+.input-div{
+    padding: 10px;
+    margin: 10px;
+}
+.input-div input{
+    padding: 10px;
+    width: 50%;
+    border: 1px solid;
+    border-color: gray;
+    outline-style: none;
+
+}
+.input-div-1 button{
+    padding: 10px;
+    margin: 5%;
+    outline-style: none;
+    width: 10%;
+    background-color: rgb(212, 212, 212);
+}
+.input-div-1 button:hover{
+    background-color: rgb(79, 126, 138);
+}
+th{
+    background-color: rgb(90, 146, 146);
+    padding: 10px;
+    margin: 10px;
+}
+
+td {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+      text-align: center;
+    /* make the list items unselectable */
+   
+  }
+ 
+  
+  
+ 
+  
+  /* Style the "Add" button */
+  button {
+    padding: 10px;
+    /* width: 25%; */
+    background: #d9d9d9;
+    color: #555;
+    /* float: left; */
+    text-align: center;
+    font-size: 16px;
+    /* cursor: pointer; */
+    transition: 0.3s;
+    border-radius: 0;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #bbb;
+  }
+  
