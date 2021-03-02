@@ -9,7 +9,7 @@
     padding: 10px;
     margin: 10px;
 }
-.input-div input{
+.input-div input{box-shadow: 0 4px 7px 0 rgba(168, 168, 168, 0.6);
     padding: 10px;
     width: 50%;
     border: 1px solid;
@@ -19,9 +19,9 @@
 }
 .input-div-1 button{
     padding: 10px;
-    margin: 5%;
+    margin: 3%;
     outline-style: none;
-    width: 10%;
+    width: fit-content;
     background-color: rgb(212, 212, 212);
 }
 .input-div-1 button:hover{
@@ -53,18 +53,66 @@ td {
   button {
     padding: 10px;
     /* width: 25%; */
-    background: #d9d9d9;
-    color: #555;
+    background: #f6ef9e;
+    color: rgb(5, 5, 5);
     /* float: left; */
     text-align: center;
     font-size: 16px;
     /* cursor: pointer; */
     transition: 0.3s;
-    border-radius: 0;
+    border-radius: 10px;
     border: none;
   }
   
   button:hover {
-    background-color: #bbb;
+    background-color: rgb(139, 139, 131);
   }
-  
+
+
+ 
+  .user-list-name{
+     margin: 10px;
+  }
+
+  .user-form{text-align: center;box-shadow: 0 4px 7px 0 rgba(42, 43, 44, 0.6);
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-image: linear-gradient(#0fb4bc,#f6ef9e);
+   
+  }
+  li{
+    padding: 10px;
+    font-size: 20px;
+
+
+  }
+  ul{
+    list-style: none;
+    padding: 10px;
+  }
+  .user-button{
+    display: flex;
+    justify-content: center;
+  }
+  .card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+   
+
+  }
+  .user-font{
+    font-size: 40px;
+  }
+  .social-icon svg{
+  margin: 10px;
+    padding: 1px;
+  }
+
+

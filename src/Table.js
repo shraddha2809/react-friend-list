@@ -1,5 +1,8 @@
 import React from 'react';
-import './Center.css'
+import './Center.css';
+import {FaUserAlt} from 'react-icons/fa'
+import{FaInstagramSquare,FaLinkedinIn,FaFacebook,FaGithub }from 'react-icons/fa'
+
 
 const Table=(Props)=>{
     const users=Props.data;
@@ -7,38 +10,67 @@ const Table=(Props)=>{
     const updateUser=Props.updateUser;
     //  console.log("users",users)
     return(
-    <div>
-     <table class="table">
-  <thead>
-    <tr>
+//     <div className="table">
+//      <table class="table">
+//   <thead>
+//     <tr>
      
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Age</th>
-      <th scope="col">Edit</th>
-      <th scope="col">Delete</th>
-    </tr>
-  </thead>
-  <tbody>
+//       <th scope="col">Name</th>
+//       <th scope="col">Email</th>
+//       <th scope="col">Age</th>
+//       <th scope="col">Edit</th>
+//       <th scope="col">Delete</th>
+//     </tr>
+//   </thead>
+//   <tbody>
+//       {users.map((item)=>{
+//           return(
+//             <tr>
+//             <td className="user-list-name">{item.name}</td>
+//               <td>{item.email}</td>
+//               <td>{item.age}</td>
+//               <td>
+//                 <button onClick={()=>updateUser(item)}>Edit</button>
+//               </td>
+//               <td>
+//                 <button onClick={()=>deleteUser(item._id)}>Delete</button>
+//               </td>
+//            </tr>
+//           );
+//       })}
+//   </tbody> 
+//   </table>
+//         </div>
+//     );
+// }
+
+
+ <div className="card" >
       {users.map((item)=>{
           return(
-            <tr>
-              <td>{item.name}</td>
-              <td>{item.email}</td>
-              <td>{item.age}</td>
-              <td>
+            <div className="user-form" >
+            <ul>
+              <div className="user-font"><FaUserAlt /></div>
+            <li className="user-list-name">{item.name}</li>
+              <li>{item.email}</li>
+              <li>{item.age}</li>
+              <li className="social-icon"><FaInstagramSquare /><FaLinkedinIn /><FaFacebook /><FaGithub /></li>
+              <div className="user-button">
+              <li className="li-button">
                 <button onClick={()=>updateUser(item)}>Edit</button>
-              </td>
-              <td>
+              </li>
+              <li className="li-button">
                 <button onClick={()=>deleteUser(item._id)}>Delete</button>
-              </td>
-           </tr>
+              </li>
+              </div>
+           </ul>
+           </div>
           );
       })}
-  </tbody>
-</table>
-        </div>
-    );
-}
+  </div>
+    )}
+    
+
+
 
 export default Table;
