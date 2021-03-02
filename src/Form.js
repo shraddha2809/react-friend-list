@@ -39,6 +39,7 @@ const Form=()=>{
         const res=await axios.post("http://localhost:8000/addStudent",formData)
     
         console.log("res:",res.data)
+        fetchUsers();
     }
      catch(error){
          console.log("error", error.response)
@@ -62,12 +63,13 @@ const Form=()=>{
     //delete
    const deleteUser=async(_id)=>{
     // console.log("shraddha")
-    //  console.log('_id',_id)
+     console.log('_id',_id)
      try{
-         const res=await axios.delete(`http://localhost:4000/deleteById/${_id}`,formData);
+         const res=await axios.delete(`http://localhost:8000/deleteById/${_id}`,formData);
          console.log("response:",res)
          fetchUsers();
        }
+
      catch(error){
          console.log("error:" ,error.response)
      }
@@ -126,7 +128,7 @@ const Form=()=>{
             </div>
 
             <div className="input-div-1">
-                 <button onClick={fetchUsers}>GET</button>
+                 {/* <button onClick={fetchUsers}>GET</button> */}
                 <button onClick={createUser}>POST</button> 
                 <button onClick={updateData}>UPDATE</button>
             </div>
